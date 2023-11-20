@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant fast food</title>
+    <!--
+        favicon
+    -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!---
+    CSS 
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        preload imagens
+    -->
+
+    <link rel="preload" as="image" href="images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-3  .jpg">
+</head>
+
+<body>
+
+    <!--
+        - PRELOADER
+    -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Grilli</p>
+    </div>
+
+
+    <!---
+     - TOP BAR
+    -->
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+
+                </div>
+
+                <span class="span">
+                    Restaurant Do Yago, Favela da Bratac, 1598, Londrina, PR
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline"></ion-icon>
+                </div>
+
+                <div class="span">Horário : 8:00Hrs até 22:00Hrs</div>
+            </div>
+
+            <a href="tel:+1123456789" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+1 123 456 789</span>
+            </a>
+
+            <div class="separator"> </div>
+
+            <a href="mailto:navarrolucas0009@gmail.com" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">navarrolucas0009@gmail.com</span>
+            </a>
+
+
+        </div>
+    </div>
+
+    <!--
+    - HEADER
+    -->
+
+    <header class="header" data-header>
+
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" width="160" height="50" alt="logo#">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="images/logo.svg" width="160" height="50" alt="Grilli - Home">
+                </a>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#menus" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Sobre nós </span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#chefe" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Nossos Chefes</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#pages" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Páginas</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+                            <span class="span">Contato</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">
+                        Visite-nos
+                    </p>
+
+                    <address class="body-4">
+                        Restaurant St, Delicious City, London 9578, UK
+                    </address>
+
+                    <p class="body-4 navbar-text">
+                        Open: 9.30 am - 2.30 pm
+                    </p>
+                    <a href="mailto:navarrolucas0009@gmail.com" class="sidebar-link">navarrolucas0009@gmail.com</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Pedidos de reserva</p>
+
+                    <a href="tel:+8812356789" class="body-1 contact-number hover-underline">+88-123-456789</a>
+                </div>
+            </nav>
+
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Encontre uma mesa</span>
+                <span class="text text-2" aria-hidden="true">Encontre uma mesa</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+    <!---
+    - MAIN
+    -->
+
+    <main>
+        <article>
+
+            <!---
+             - HERO
+            -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal" style="font-size: 20px">Tradicional e Higiene
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">Pelo amor <br>
+                            da Comida deliciosa
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Venha com a família e sinta a alegria de uma comida de dar água na boca
+                        </p>
+
+                        <a href="" class="btn btn-primary sider-reveal">
+                            <span class="text-1">
+                                Veja nosso cardápio
+                            </span>
+
+                            <span class="text-2" aria-hidden="true">
+                                Veja nosso cardápio
+                            </span>
+                        </a>
+
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal" style="font-size: 20px">Experiência deliciosa
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">Sabores inspirados em <br>
+                            nas estações
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Venha com a família e sinta a alegria de uma comida de dar água na boca
+                        </p>
+
+                        <a href="" class="btn btn-primary sider-reveal">
+                            <span class="text-1">
+                                Veja nosso cardápio
+                            </span>
+
+                            <span class="text-2" aria-hidden="true">
+                                Veja nosso cardápio
+                            </span>
+                        </a>
+
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal" style="font-size: 20px">incrível e deliciosa
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">Pelo amor <br>
+                            Onde cada sabor <br>
+                            conta uma história
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Venha com a família e sinta a alegria de uma comida de dar água na boca
+                        </p>
+
+                        <a href="" class="btn btn-primary sider-reveal">
+                            <span class="text-1">
+                                Veja nosso cardápio
+                            </span>
+
+                            <span class="text-2" aria-hidden="true">
+                                Veja nosso cardápio
+                            </span>
+                        </a>
+
+
+                    </li>
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn> 
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <a href="#" class="hero-btn has-after">
+                    <img src="images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+                    <span class="label-2 text-center span">Reservar uma mesa</span>
+                </a>
+
+            </section>
+
+
+
+
+
+        </article>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
